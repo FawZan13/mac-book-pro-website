@@ -59,9 +59,8 @@ document.getElementById('promo-button').addEventListener('click', function(){
     const discount = totalPrice * .20;
     if(getPromoInput.value == 'stevekaku' && isUsed == false){
         const discountPrice = totalPrice - discount; 
-        getTotalPrice.innerText = discountPrice;
         const bigTotalPrice = document.getElementById('big-total-price');
-        bigTotalPrice.innerText = getTotalPrice.innerText;
+        bigTotalPrice.innerText = discountPrice;
         isUsed = true;
     }
     getPromoInput.value = '';
